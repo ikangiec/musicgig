@@ -1,0 +1,106 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+    %title Music Gig Marketplace
+    / Bootstrap core CSS
+    %link{:href => "css/bootstrap.css", :rel => "stylesheet"}/
+    / Custom styles for this template
+    %link{:href => "css/jumbotron.css", :rel => "stylesheet"}/
+  %body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        %button.navbar-toggle{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.navbar-brand{:href => "#"} MusicGig
+        .nav-collapse.collapse
+          %ul.nav.navbar-nav
+            %li.active
+              %a{:href => "#"} Home
+            %li
+              %a{:href => "#about"} About
+            %li
+              %a{:href => "#contact"} Contact
+            %li.dropdown
+              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                Dropdown
+                %b.caret
+              %ul.dropdown-menu
+                %li
+                  %a{:href => "#"} Action
+                %li
+                  %a{:href => "#"} Another action
+                %li
+                  %a{:href => "#"} Something else here
+                %li.divider
+                %li.nav-header Nav header
+                %li
+                  %a{:href => "#"} Separated link
+                %li
+                  %a{:href => "#"} One more separated link
+          %form.navbar-form.form-inline.pull-right
+            %input{:placeholder => "Email", :type => "text"}/
+            %input{:placeholder => "Password", :type => "password"}/
+            %button.btn{:type => "submit"} Sign in
+        / /.nav-collapse
+    .container
+      %hr/
+      .row
+        .col-lg-6
+          .input-group
+            %input.form-control{:type => "text"}/
+            %span.input-group-btn
+              %button.btn.btn-default{:type => "button"} Search
+          / /input-group
+        / /.col-lg-6
+      / /.row
+      / Main jumbotron for a primary marketing message or call to action
+      .jumbotron
+        %h1 Music Gig Marketplace
+        %p A marketplace for bookers and artists to collaborate the match-making effort. Bookers can post gigs online for artists to apply. Ideally, it is also a platform for fans to come and vote for their favorite artists.
+        %p
+          %a.btn.btn-primary.btn-large Learn more »
+      .body-content
+        / Example row of columns
+        .row
+          .col-lg-4
+            %h2 Welcome!
+            %p SYNCBEAT is a platform that provides a medium for bookers, artists, and fans where gigs can be posted and searched for free. It empowers bookers and artists to efficiently take control of their gig hiring and self-promotion - Trustworthy, faster and secured.
+            %p
+              %a.btn.btn-default{:href => "#"} View details »
+          .col-lg-4
+            %h2 Post Gig
+            %p
+              %input.form-control{:placeholder => "Gig Title", :type => "text"}/
+              %br/
+              %textarea.form-control{:placeholder => "Gig Description", :rows => "10"}
+            %p
+              %a.btn.btn-default{:href => "#"} Post
+          .col-lg-4
+            %h2 FAQ
+            #accordion2.accordion
+              .accordion-group
+                .accordion-heading
+                  %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseOne"}
+                    Why MusicGig?
+                #collapseOne.accordion-body.collapse
+                  .accordion-inner
+                    Because we're currently the only platform that helps musicians to better manage themselves that focuses in live music space.
+                .accordion-group
+                  .accordion-heading
+                    %a.accordion-toggle{"data-parent" => "#accordion2", "data-toggle" => "collapse", :href => "#collapseTwo"}
+                      Who are your target customers?
+                  #collapseTwo.accordion-body.collapse
+                    .accordion-inner
+                      Bookers (venues), artists (musicians), and fans (listeners).
+            %p
+              %a.btn.btn-default{:href => "#"} View More »
+        %hr/
+        %footer
+          %p © MusicGig 2013
+    / /container
