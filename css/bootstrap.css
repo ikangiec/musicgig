@@ -2733,13 +2733,15 @@ button.close {
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
-  color: #777777;
+  /*color: #777777;*/
+  color: #FF4E00;
   text-align: center;
 }
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-  color: #5e5e5e;
+  /*color: #5e5e5e;*/
+  color: #FF4E00;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2758,7 +2760,8 @@ button.close {
 
 .navbar-toggle:hover,
 .navbar-toggle:focus {
-  background-color: #dddddd;
+  /*background-color: #dddddd;*/
+  background-color: #FF4E00;
 }
 
 .navbar-toggle .icon-bar {
@@ -2810,7 +2813,8 @@ button.close {
 .navbar-nav > .open > a,
 .navbar-nav > .open > a:hover,
 .navbar-nav > .open > a:focus {
-  color: #555555;
+  /*color: #555555;*/
+  color: #FF4E00;
   background-color: #d5d5d5;
 }
 
@@ -2837,7 +2841,8 @@ button.close {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #999999;
+  /*color: #999999;*/
+  color: #FF4E00;
 }
 
 .navbar-inverse .navbar-brand:hover,
@@ -2851,7 +2856,8 @@ button.close {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #999999;
+  /*color: #999999;*/
+  color: #FF4E00;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
@@ -2900,8 +2906,10 @@ button.close {
 }
 
 .navbar-inverse .navbar-nav > .dropdown > a .caret {
-  border-top-color: #999999;
-  border-bottom-color: #999999;
+/*  border-top-color: #999999;
+  border-bottom-color: #999999;*/
+  border-top-color: #FF4E00;
+  border-bottom-color: #FF4E00;
 }
 
 .navbar-inverse .navbar-nav > .open > a .caret,
