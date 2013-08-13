@@ -13,6 +13,11 @@
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
+
+    <!-- HTML5 shim for IE backwards compatibility -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
 
   <body>
@@ -55,17 +60,6 @@
     <div class="container">
       <hr>
 
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="input-group">
-            <input type="text" class="form-control">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button">Search</button>
-            </span>
-          </div><!-- /input-group -->
-        </div><!-- /.col-lg-6 -->
-      </div><!-- /.row -->
-
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
         <h1>Music Gig Marketplace</h1>
@@ -74,21 +68,31 @@
       </div>
 
       <div class="body-content">
-
         <!-- Example row of columns -->
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-6">
+            <br>
+            <p>
+              <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">Search</button>
+                </span>
+              </div><!-- /input-group -->
+            </p>
             <h2>Welcome!</h2>
             <p>MusicGig is a platform that provides a medium for bookers, artists, and fans where gigs can be posted and searched for free. It empowers bookers and artists to efficiently take control of their gig hiring and self-promotion - Trustworthy, faster and secured.</p>
             <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+            <h2>FAQ</h2>
+            <p>Coming Soon...</p>
+            <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-6">
             <h2>Post Gig</h2>
             <p>
               <input type="text" class="form-control" placeholder="Gig Title"><br />
               <textarea class="form-control" rows="10" placeholder="Gig Description"></textarea>
-              <p id="demo">Click the button to get your position:</p>
-              <button onclick="getLocation()" type="submit" class="btn">Find your location!</button>
+              <p id="demo"><button onclick="getLocation()" type="submit" class="btn">Find your location!</button></p>
               <div id="mapholder"></div>
               <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
               <script>
@@ -142,36 +146,6 @@
               </script>
             </p>
             <p><a class="btn btn-default" href="#">Post</a></p>
-         </div>
-          <div class="col-lg-4">
-            <h2>FAQ</h2>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                    Why MusicGig?
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Because we're currently the only platform that helps musicians to better manage themselves that focuses in live music space.
-                  </div>
-                </div>
-                <div class="accordion-group">
-                  <div class="accordion-heading">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                      Who are your target customers?
-                    </a>
-                  </div>
-                  <div id="collapseTwo" class="accordion-body collapse">
-                    <div class="accordion-inner">
-                      Bookers (venues), artists (musicians), and fans (listeners).
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p><a class="btn btn-default" href="#">View More &raquo;</a></p>
           </div>
         </div>
 
